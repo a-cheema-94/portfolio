@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-	
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:wght@500&display=swap');
 body {
   background-color: #606678;
   color: white;
@@ -8,26 +7,33 @@ body {
   font-size: 25px;
   font-weight: 300;
   }
+#navbar h1 {
+  font-family: 'Dancing Script', cursive;
+}
 #navbar {
   position: fixed;
   top: 0;
   z-index: 1;
   width: 100%;
   background-color: #606678;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
   }
 nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 30px;
+  gap: 10px;
   }
 @media (max-width: 800px) {
   nav ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 15px;
   }
   }
 nav a {
@@ -40,6 +46,31 @@ nav a:hover {
   text-decoration: none;
   display: block;
   }
+#theme-options-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #000;
+
+  margin: 5px;
+  border: 2px solid var(--themeDotBorder);
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  cursor: pointer;
+}
+
+.theme-dot:hover {
+  border-width: 5px;
+}
 #welcome-section {
   top: 0px;
   left: 0px;
