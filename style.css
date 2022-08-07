@@ -23,6 +23,7 @@ body {
 #navbar {
   position: fixed;
   top: 0;
+  /* right: 0; */
   z-index: 1;
   width: 100%;
   background-color: var(--background-color);
@@ -110,29 +111,13 @@ nav a:hover {
   font-style: italic;
   }
   
-#contact {
-  background-color: var(--background-color);
-  height: 25vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  
-  }
-#projects {
-  background-color: var(--projects-section);
-  padding-top: 50px;
+  #projects {
+    background-color: var(--projects-section);
+    padding-top: 50px;
   }
 
-#contact a {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-decoration: none;
-  color: var(--main-textColor);
-  padding: 20px;
-  }
-.container {
-  display: grid;
+  .container {
+    display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 40px;
   padding: 30px;
@@ -191,10 +176,27 @@ img {
 #JavaScript {
   background-color: #c7daf2;
   }
+
 .contact-info {
-  text-align: start;
   padding-left: 20px;
+  margin-top: 20px;
+  }
+  
+#contact {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
   border-top: 4px solid var(--welcome-section);
-  padding-top: 30px;
-  width: 100%;
+  margin-top: 30px;
+  }
+
+#contact a {
+  text-decoration: none;
+  color: var(--main-textColor);
+  padding: 20px;
+  }
+
+  .icons {
+    padding-right: 20px;
+    margin-top: 30px;
   }
