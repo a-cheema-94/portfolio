@@ -1,6 +1,6 @@
 :root {
-  --background-color: #f8f8fa;
-  --welcome-section: rgb(12, 12, 12);
-  --projects-section: #e9ad54;
-  --main-textColor: #000;
+  --background-color: rgb(41, 38, 38);
+  --welcome-section: #70ee57;
+  --projects-section: rgb(182, 181, 181);
+  --main-textColor: #f8f8fa;
 }
