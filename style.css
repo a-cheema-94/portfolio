@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:wght@500&display=swap');
+
+:root {
+  --background-color: #313338;
+  --welcome-section: rgb(247, 96, 91);
+  --projects-section: #e9ad54;
+  --main-textColor: #fff;
+}
+
 body {
-  background-color: #606678;
-  color: white;
+  background-color: var(--background-color);
+  color: var(--main-textColor);
   line-height: 1.5;
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
@@ -15,7 +23,7 @@ body {
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: #606678;
+  background-color: var(--background-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -37,7 +45,7 @@ nav ul {
   }
   }
 nav a {
-  color: white;
+  color: var(--main-textColor);
   text-decoration: none;
   display: block;
   }
@@ -71,11 +79,24 @@ nav a:hover {
 .theme-dot:hover {
   border-width: 5px;
 }
+
+#red-mode {
+  background-color: rgb(247, 96, 91);
+}
+
+#blue-mode {
+  background-color: rgb(247, 96, 91);
+}
+
+#green-mode {
+  background-color: rgb(247, 96, 91);
+}
+
 #welcome-section {
   top: 0px;
   left: 0px;
   right: 0px;
-  background-color: rgb(247, 133, 129);
+  background-color: var(--welcome-section);
   height: 100vh;
   padding-top: 200px;
   text-align: center;
@@ -88,7 +109,7 @@ nav a:hover {
   }
   
 #contact {
-  background-color: #606678;
+  background-color: var(--background-color);
   height: 25vh;
   display: flex;
   flex-direction: row;
@@ -96,22 +117,16 @@ nav a:hover {
   
   }
 #projects {
-  background-color: #c8faf0;
-  /* height: 200vh; */
+  background-color: var(--projects-section);
   padding-top: 50px;
   }
-@media (max-width: 800px) {
-  #projects {
-  background-color: #c8faf0;
-  /* height: 350vh; */
-  }
-  }
+
 #contact a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-decoration: none;
-  color: white;
+  color: var(--main-textColor);
   padding: 20px;
   }
 .container {
@@ -140,8 +155,8 @@ nav a:hover {
   }
   }
 .project-tile {
-  background-color: white;
-  border: 5px solid #606678;
+  background-color: var(--main-textColor);
+  border: 5px solid var(--background-color);
   padding: 20px;
   font-size: 30px;
   text-align: center;
@@ -155,14 +170,14 @@ nav a:hover {
   }
 #projects h1 {
   text-align: center;
-  color: #606678;
+  color: var(--background-color);
 }
 .project-tile:hover {
   transform: scale(1.05);
   }
 #text {
   text-decoration: none;
-  color: black;
+  color: var(--background-color);
   }
 img {
   width: 300px;
@@ -177,6 +192,6 @@ img {
 .contact-info {
   text-align: start;
   padding-left: 20px;
-  border-top: 4px solid rgb(247, 133, 129);
+  border-top: 4px solid var(--welcome-section);
   padding-top: 30px;
   }
