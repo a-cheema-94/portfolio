@@ -1,0 +1,193 @@
+<!doctype html>
+
+<html>
+
+<head>
+<!--<script text='javascript' src='write.js'></script>-->
+<style>
+	body {
+		font-family: verdana, san-serif;
+		line-height: 1.5;
+		margin: 20px;
+		}
+	#title {
+    text-align: center;
+    font-size: 20px;
+		}
+	#document {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 35px;
+		}
+	@media (max-width: 800px) {
+		#document {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 35px;
+		padding: 20px;
+		margin: 20px;
+		}
+		}
+	#navbar {
+		min-width: 250px;
+		padding-right: 30px;
+		}
+	.nav-link {
+		color: #000;
+		text-decoration: none;
+		display: block;
+		}
+	.list {
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		list-style: none;
+		grid-gap: 10px;
+		border: 1px solid;
+		padding:0;
+		}
+	#navbar li {
+		border-top: 1px solid;
+		padding: 5px;
+		}
+	#navbar a {
+		padding: 2px;
+		cursor: pointer;
+		}
+	.box {
+		background-color: #c7daf2;
+		border: 1px solid;
+		padding: 5px;
+		}
+</style>
+</head>
+
+
+<body>
+<div id='document'>
+<nav id='navbar'>
+	<header id='title'><h1>Javascript Documentation</h1></header>
+	<ul class='list'>
+		<li><a class='nav-link' href='#Introduction'>Introduction</a></li>
+		<li><a class='nav-link' href='#Javascript'>JavaScript</a></li>
+		<li><a class='nav-link' href='#Variables'>Variables</a></li>
+		<li><a class='nav-link' href='#Data_Types'>Data Types</a></li>
+		<li><a class='nav-link' href='#if...else_Statement'>if...else Statement</a></li>
+		<li><a class='nav-link' href='#while_Statement'>while Statement</a></li>
+		<li><a class='nav-link' href='#Functions'>Functions</a></li>
+		<li><a class='nav-link' href='#References'>References</a></li>
+	</ul>
+</nav>
+<main id='main-doc'>
+	<section id='Introduction' class='main-section'>
+		<header><h1>Introduction</h1></header>
+		<article>
+			<p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+			<p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+			<ul>
+				<li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+				<li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database.</li>
+			</ul>
+		</article>
+	</section>
+	<section id='Javascript' class='main-section'>
+		<header><h1>JavaScript</h1></header>
+		<article>
+			<p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+			<p>JavaScript supports a runtime system based on a small
+			number of data types representing values of type:</p>
+			<ul>
+				<li>Numeric</li>
+				<li>Boolean</li>
+				<li>String</li>
+			</ul>
+			<p> JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+		</article>
+	</section>
+	<section id='Variables' class='main-section'>
+		<header><h1>Variables</h1></header>
+		<article>
+			<p>There are three ways to define a variable in JavaScript:</p>
+			<div class='box'>
+			<code>var x = 78.</code>
+			</div>
+			<p>Above uses keyword 'var' and can declare both local and global variables.</p>
+			<div class='box'>
+			<code>let i = 8.</code>
+			</div>
+			<p>Above uses keyword 'let' and can declare a block scope local variable.</p>
+			<div class='box'>
+			<code>x = 89.</code>
+			</div>
+			<p>Above assigns a value and will be a global variable.</p>
+		</article>
+	</section>
+	<section id='Data_Types' class='main-section'>
+		<header><h1>Data Types</h1></header>
+		<article>
+			<p>ECMAScript standard defines seven data types, six of which are primitives:</p>
+			<ul>
+				<li>Boolean</li>
+				<li>null</li>
+				<li>undefined</li>
+				<li>Number</li>
+				<li>String</li>
+				<li>Symbol</li>
+			</ul>
+			<p>and lastly:</p>
+			<ul><li>Object</li><ul>
+		</article>
+	</section>
+	<section id='if...else_Statement' class='main-section'>
+		<header><h1>if...else Statement</h1></header>
+		<article>
+			<p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
+			<div class='box'>
+			<code>if (condition) {statement_1;} else {statement_2;}</code>
+			</div>
+			<p>You can also extend the statements with else if, as follows:</p>
+			<div class='box'>
+			<code>if (condition_1) {statement_1;} else if (condition_n) {statement_n;} else {statement_end;}</code>
+			</div>
+		</article>
+	</section>
+	<section id='while_Statement' class='main-section'>
+		<header><h1>while Statement</h1></header>
+		<article>
+			<p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
+			<code>while (condition) statement</code>
+			<p>If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.</p>
+			<p>The condition test occurs before the statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while. To execute multiple statements, use a block statement ({...}) to group those statements. The below loop iterates as long as n is less than five.</p>
+			<div class='box'>
+			<code>var n = 0; var x = 0; while (n &lt; 5) {n++; x += n;}</code>
+			</div>
+			<p>With each iteration, the loop increments n (using ++ command) and adds that value to x. After each iteration x and n compute to this:</p>
+			<ol>
+				<li>n = 1, x = 1</li>
+				<li>n = 2, x = 3</li>
+				<li>n = 3, x = 6</li>
+				<li>n = 4, x = 10</li>
+			</ol>
+			Now the loop terminates since n &lt; 5 is no longer true.
+		</article>
+	</section>
+	<section id='Functions' class='main-section'>
+		<header><h1>Functions</h1></header>
+		<article>
+			<p>A function definition/declaration/statement consists of the function keyword, the name of the function, a list of arguments in brackets and the JavaScript statements in curly brackets. For example:</p>
+			<div class='box'>
+			<code>function name_of_function(argument_1) {return argument_1 * 8;}</code>
+			</div>
+			<p>This function multiplies the initial argument by eight.</p>
+		</article>
+	</section>
+	<section id='References' class='main-section'>
+		<header><h1>References</h1></header>
+		<p>The information in this document is taken from <a href='https://codepen.io/freeCodeCamp/pen/NdrKKL' target='blank'>freeCodeCamp</a> which was originally taken form <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide' target='blank'>MDN</a>.</p>
+	</section>
+</main>
+</div>
+</body>
+
+</html>

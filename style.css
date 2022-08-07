@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+	
+body {
+  background-color: #606678;
+  color: white;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  }
+#navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #606678;
+  }
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 30px;
+  }
+@media (max-width: 800px) {
+  nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 30px;
+  }
+  }
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  }
+nav a:hover {
+  color: #e3bb1b;
+  text-decoration: none;
+  display: block;
+  }
+#welcome-section {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgb(247, 133, 129);
+  height: 100vh;
+  padding-top: 200px;
+  text-align: center;
+  }
+#welcome-section h1 {
+  font-size: 4.5rem;
+  }
+#welcome-section h3 {
+  font-style: italic;
+  }
+  
+#contact {
+  background-color: #606678;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+  }
+#projects {
+  background-color: #c8faf0;
+  /* height: 200vh; */
+  padding-top: 50px;
+  }
+@media (max-width: 800px) {
+  #projects {
+  background-color: #c8faf0;
+  /* height: 350vh; */
+  }
+  }
+#contact a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+  padding: 30px;
+  justify-items: center;
+  align-items: center;
+}
+@media (max-width: 1100px){
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+  }
+}
+@media (max-width: 730px){
+  .container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  padding: 30px;
+  justify-items: center;
+  align-items: center;
+  }
+  }
+.project-tile {
+  background-color: white;
+  border: 5px solid #606678;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  width: 80%;
+  height: 350px;
+  }
+#projects h1 {
+  text-align: center;
+  color: #606678;
+}
+.project-tile:hover {
+  transform: scale(1.05);
+  }
+#text {
+  text-decoration: none;
+  color: black;
+  }
+img {
+  width: 300px;
+  }
+#Amazon {
+  background-color: #b8cef2;
+
+  }
+#JavaScript {
+  background-color: #c7daf2;
+  }
+.contact-info {
+  text-align: start;
+  padding-left: 20px;
+  border-top: 4px solid rgb(247, 133, 129);
+  padding-top: 30px;
+  }

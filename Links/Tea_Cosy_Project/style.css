@@ -1,0 +1,128 @@
+body {
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  
+  padding: 0;
+  margin: 0;
+}
+
+.header-wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
+}
+
+.header {
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header img {
+  height: 50px;
+  margin: 10px;
+}
+
+nav ul{
+  display: inline-flex;
+  gap: 20px;
+  text-decoration: underline;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.mission {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 69px;
+}
+
+.image {
+  background-image: url(./Images/img-mission-background.jpg);
+  width: 1200px;
+  height: 100%;
+}
+
+.box {
+  background-color: black;
+  text-align: center;
+  height: 100px;
+  position: relative;
+  top: 300px;
+}
+
+.tea-of-month {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 1000px;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container img{
+  height: 200px;
+  width: 300px;
+}
+
+.locations {
+  /* border: 1px solid red; */
+  margin: 0 40px;
+  margin-top: 40px;
+  height: 600px;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.image-locations {
+  background-image: url(./Images/img-locations-background.jpg);
+  width: 1200px;
+  height: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-top: 5px;
+}
+
+.addresses {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.address {
+  background-color: #000;
+  opacity: 1;
+  width: 300px;
+  text-align: center;
+  height: 340px;
+  line-height: 50px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
